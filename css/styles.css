@@ -1,0 +1,107 @@
+/* =========================
+   GLOBAL BASE
+========================= */
+body {
+  background: #0b0b0f;
+  color: white;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* =========================
+   MODERN SURFACES
+========================= */
+.surface {
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border: 1px solid rgba(255,255,255,.10);
+  backdrop-filter: blur(14px);
+}
+
+.soft-shadow {
+  box-shadow:
+    0 0 0 1px rgba(255,255,255,.06) inset,
+    0 20px 60px rgba(0,0,0,.45);
+}
+
+/* =========================
+   HERO EFFECTS
+========================= */
+.hero-noise {
+  background-image:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.10), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(255,0,60,.10), transparent 40%),
+    radial-gradient(circle at 30% 85%, rgba(255,255,255,.08), transparent 38%);
+}
+
+.glow {
+  position: relative;
+}
+.glow::before {
+  content: "";
+  position: absolute;
+  inset: -80px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,0,60,.22), transparent 45%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,.08), transparent 55%),
+    radial-gradient(circle at 30% 90%, rgba(255,0,60,.10), transparent 55%);
+  filter: blur(18px);
+  z-index: -1;
+}
+
+/* =========================
+   BUTTON MICRO-INTERACTION
+========================= */
+.btn {
+  transition: transform .12s ease, background-color .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(1px); }
+
+/* =========================
+   VIDEO HERO
+========================= */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* =========================
+   BACKGROUND WORDS
+========================= */
+.bg-words {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0.10;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.bg-words span {
+  position: absolute;
+  white-space: nowrap;
+}
+
+.bg-words .line1 {
+  top: 60px;
+  left: -40px;
+  transform: rotate(-8deg);
+  font-size: clamp(48px, 8vw, 110px);
+}
+
+.bg-words .line2 {
+  top: 180px;
+  right: -60px;
+  transform: rotate(10deg);
+  font-size: clamp(42px, 7vw, 90px);
+}
+
+.bg-words .line3 {
+  bottom: 40px;
+  left: 40px;
+  transform: rotate(-6deg);
+  font-size: clamp(38px, 6vw, 80px);
+}

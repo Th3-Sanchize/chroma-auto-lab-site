@@ -1,11 +1,583 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chroma Auto Lab</title>
-  </head>
-  <body>
-    <h1>It’s alive.</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Chroma Auto Lab | Premium Window Tint in Killeen TX</title>
+  <meta name="description" content="Premium window tint installation in Killeen, Harker Heights, Fort Hood and Nolanville. Precision installs built for Texas heat." />
+  <meta name="keywords" content="window tint Killeen, ceramic tint Killeen, window tint Harker Heights, auto tint Fort Hood, car window tint Nolanville, ceramic window tint Central Texas" />
+
+  <!-- Tailwind CDN (fastest V1) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="selection:bg-red-500/30 selection:text-white">
+
+  <!-- NAV -->
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-[#0b0b0f]/85 backdrop-blur">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#top" class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded-2xl surface soft-shadow grid place-items-center">
+          <span class="text-sm font-semibold tracking-tight">C</span>
+        </div>
+        <div class="leading-tight">
+          <div class="text-sm font-semibold tracking-tight">Chroma Auto Lab</div>
+          <div class="text-xs text-white/60">Window Tint Specialist</div>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm text-white/80">
+        <a class="hover:text-white" href="#services">Services</a>
+        <a class="hover:text-white" href="#quote">Quote Builder</a>
+        <a class="hover:text-white" href="#standard">The Lab Standard</a>
+        <a class="hover:text-white" href="#results">Results</a>
+        <a class="hover:text-white" href="#faq">FAQ</a>
+        <a class="hover:text-white" href="#contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a class="hidden sm:inline-flex btn rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
+           href="tel:2546778799">Call</a>
+
+        <a class="btn rounded-2xl bg-red-500 px-4 py-2 text-sm font-semibold hover:bg-red-400"
+           href="#contact">Get a Quote</a>
+
+        <button id="menuBtn"
+                class="md:hidden btn ml-1 inline-flex h-10 w-10 items-center justify-center rounded-2xl border border-white/15 bg-white/5 hover:bg-white/10"
+                aria-label="Open menu">
+          <span class="text-lg">☰</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
+      <div class="surface soft-shadow rounded-3xl p-3">
+        <div class="grid gap-2 text-sm text-white/85">
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#services">Services</a>
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#quote">Quote Builder</a>
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#standard">The Lab Standard</a>
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#results">Results</a>
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#faq">FAQ</a>
+          <a class="rounded-2xl px-3 py-2 hover:bg-white/10" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+    <section class="relative overflow-hidden">
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/hero.jpg">
+        <source src="assets/hero.webm" type="video/webm" />
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+
+      <div class="absolute inset-0 bg-black/65"></div>
+      <div class="absolute inset-0 hero-noise opacity-70"></div>
+
+      <div class="bg-words">
+        <span class="line1">CHROMA AUTO LAB • PRECISION • TINT • HEAT • CLARITY •</span>
+        <span class="line2">THE LAB STANDARD • CLEAN EDGES • CONSISTENT FINISH •</span>
+        <span class="line3">KILLEEN • HARKER HEIGHTS • FORT HOOD • NOLANVILLE •</span>
+      </div>
+
+      <div class="relative">
+        <div class="max-w-6xl mx-auto px-4 py-20 md:py-28">
+          <div class="glow">
+            <div class="max-w-2xl">
+              <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs surface soft-shadow">
+                <span class="h-2 w-2 rounded-full bg-red-500"></span>
+                Premium window tint • Killeen, TX
+              </div>
+
+              <h1 class="mt-6 text-4xl md:text-6xl font-semibold leading-[1.05] tracking-[-0.02em]">
+                Premium Window Tint.<br>
+                Precision Installed.<br>
+                <span class="text-white/65">Built for Texas heat and daily driving.</span>
+              </h1>
+
+              <p class="mt-6 text-base md:text-lg text-white/75 leading-relaxed">
+                Chroma Auto Lab specializes in high-quality automotive window tint designed to improve comfort,
+                privacy, and protection. Every vehicle follows our inspection-driven Lab Standard —
+                because clean installs come from disciplined process, not shortcuts.
+              </p>
+
+              <p class="mt-4 text-sm text-white/55">
+                Serving Killeen • Harker Heights • Fort Hood • Nolanville
+              </p>
+
+              <div class="mt-8 flex flex-col sm:flex-row gap-3">
+                <a href="#quote" class="btn inline-flex justify-center items-center rounded-2xl bg-red-500 px-6 py-3 font-semibold hover:bg-red-400">
+                  Build My Quote
+                </a>
+                <a href="#results" class="btn inline-flex justify-center items-center rounded-2xl border border-white/20 bg-white/5 px-6 py-3 hover:bg-white/10">
+                  View Results
+                </a>
+                <a href="sms:2546778799" class="btn inline-flex justify-center items-center rounded-2xl border border-white/15 bg-black/20 px-6 py-3 hover:bg-white/10">
+                  Text
+                </a>
+                <button id="copyPhone" class="btn inline-flex justify-center items-center rounded-2xl border border-white/15 bg-black/20 px-6 py-3 hover:bg-white/10" type="button">
+                  Copy #
+                </button>
+              </div>
+
+              <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <div class="surface soft-shadow rounded-2xl px-4 py-3">
+                  <div class="text-xs text-white/55">Focus</div>
+                  <div class="mt-1 text-sm font-semibold">Factory clean finish</div>
+                </div>
+                <div class="surface soft-shadow rounded-2xl px-4 py-3">
+                  <div class="text-xs text-white/55">Comfort</div>
+                  <div class="mt-1 text-sm font-semibold">Heat + glare control</div>
+                </div>
+                <div class="surface soft-shadow rounded-2xl px-4 py-3">
+                  <div class="text-xs text-white/55">Process</div>
+                  <div class="mt-1 text-sm font-semibold">The Lab Standard</div>
+                </div>
+                <div class="surface soft-shadow rounded-2xl px-4 py-3">
+                  <div class="text-xs text-white/55">Warranty</div>
+                  <div class="mt-1 text-sm font-semibold">Manufacturer-backed</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hidden lg:block absolute right-0 top-10">
+              <div class="surface soft-shadow rounded-3xl p-5 w-[320px]">
+                <div class="text-xs text-white/55">Signature</div>
+                <div class="mt-1 text-sm font-semibold">Precision. Not shortcuts.</div>
+                <div class="mt-3 text-sm text-white/70">
+                  Clean edges, consistent shrinking, and a finish that looks intentional.
+                </div>
+                <a href="#quote" class="mt-4 inline-flex text-sm font-semibold text-red-300 hover:text-red-200">
+                  Build a quote request →
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Services</h2>
+            <p class="mt-2 text-sm text-white/65">Focused, premium upgrades that look clean today and hold up tomorrow.</p>
+          </div>
+          <a href="#quote" class="hidden sm:inline-flex btn rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-sm hover:bg-white/10">
+            Build a quote request
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <article class="surface soft-shadow rounded-3xl p-7">
+            <div class="text-xs text-white/60">Primary Service</div>
+            <h3 class="mt-2 text-lg font-semibold">Window Tint — comfort, privacy, and protection.</h3>
+            <p class="mt-2 text-sm text-white/70">
+              Precision-cut window film installed for a clean, factory-level finish. Reduce interior heat, minimize glare,
+              and upgrade the overall look of your vehicle.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-white/75">
+              <li>• Carbon & Ceramic film options</li>
+              <li>• Heat and UV rejection</li>
+              <li>• Clean edges and consistent shrinking</li>
+            </ul>
+          </article>
+
+          <article class="surface soft-shadow rounded-3xl p-7">
+            <div class="text-xs text-white/60">Coming Soon</div>
+            <h3 class="mt-2 text-lg font-semibold">Vinyl Wrap & Custom Accents</h3>
+            <p class="mt-2 text-sm text-white/70">
+              Color transformations, chrome deletes, and accent work are currently being expanded as part of the Chroma Auto Lab lineup.
+            </p>
+            <ul class="mt-4 space-y-2 text-sm text-white/75">
+              <li>• Chrome delete</li>
+              <li>• Roof & trim accents</li>
+              <li>• Full wrap services coming soon</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE BUILDER -->
+    <section id="quote" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Tint Quote Builder</h2>
+            <p class="mt-2 text-sm text-white/65">
+              Build a quick request so we can respond faster. No pricing games — just the info we need.
+            </p>
+          </div>
+          <a href="#contact" class="hidden sm:inline-flex btn rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-sm hover:bg-white/10">
+            Jump to form
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-6 lg:grid-cols-2">
+          <form id="quoteBuilder" class="surface soft-shadow rounded-3xl p-7">
+            <div class="grid gap-4">
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="qbVehicle">Vehicle</label>
+                <input id="qbVehicle" name="qbVehicle" class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35" placeholder="2020 BMW X3" required />
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="qbType">Vehicle type</label>
+                <select id="qbType" class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white" required>
+                  <option class="bg-[#0b0b0f]" value="Sedan/Coupe" selected>Sedan/Coupe</option>
+                  <option class="bg-[#0b0b0f]" value="Small SUV">Small SUV</option>
+                  <option class="bg-[#0b0b0f]" value="Mid-Size SUV">Mid-Size SUV</option>
+                  <option class="bg-[#0b0b0f]" value="Truck">Truck</option>
+                  <option class="bg-[#0b0b0f]" value="Large SUV/Van">Large SUV/Van</option>
+                </select>
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60">Coverage</label>
+                <div class="grid sm:grid-cols-2 gap-3">
+                  <label class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                    <input type="checkbox" class="accent-red-500" id="qbSides" checked />
+                    Sides + rear
+                  </label>
+                  <label class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                    <input type="checkbox" class="accent-red-500" id="qbWindshield" />
+                    Windshield
+                  </label>
+                  <label class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                    <input type="checkbox" class="accent-red-500" id="qbBrow" />
+                    Brow strip
+                  </label>
+                  <label class="flex items-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm">
+                    <input type="checkbox" class="accent-red-500" id="qbRemoveOld" />
+                    Remove old tint
+                  </label>
+                </div>
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="qbFilm">Film</label>
+                <select id="qbFilm" class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white" required>
+                  <option class="bg-[#0b0b0f]" value="Carbon" selected>Carbon (great value)</option>
+                  <option class="bg-[#0b0b0f]" value="Ceramic">Ceramic (best heat rejection)</option>
+                </select>
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="qbShade">Preferred shade</label>
+                <select id="qbShade" class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white" required>
+                  <option class="bg-[#0b0b0f]" value="Legal" selected>Legal / comfortable</option>
+                  <option class="bg-[#0b0b0f]" value="Darker">Darker privacy look</option>
+                  <option class="bg-[#0b0b0f]" value="Not sure">Not sure — recommend for me</option>
+                </select>
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="qbNotes">Notes</label>
+                <textarea id="qbNotes" class="min-h-[110px] w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35" placeholder="Anything we should know? (aftermarket windshield, sensors, picky about haze, etc.)"></textarea>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button type="submit" class="btn rounded-2xl bg-red-500 px-6 py-3 text-sm font-semibold hover:bg-red-400">
+                  Generate Request
+                </button>
+                <button id="qbCopy" type="button" class="btn rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm hover:bg-white/10">
+                  Copy Summary
+                </button>
+                <button id="qbSend" type="button" class="btn rounded-2xl border border-white/15 bg-black/20 px-6 py-3 text-sm hover:bg-white/10">
+                  Send via Form
+                </button>
+              </div>
+
+              <p class="text-xs text-white/45">
+                “Send via Form” auto-fills the contact form details box so you don’t type twice.
+              </p>
+            </div>
+          </form>
+
+          <div class="surface soft-shadow rounded-3xl p-7">
+            <div class="text-xs text-white/60">Your request summary</div>
+            <h3 class="mt-2 text-lg font-semibold">What we’ll receive</h3>
+            <p class="mt-2 text-sm text-white/70">This is what gets dropped into your message to us.</p>
+
+            <pre id="qbOutput" class="mt-6 whitespace-pre-wrap rounded-2xl border border-white/10 bg-white/5 p-5 text-sm text-white/80 min-h-[280px]">Fill out the builder and click “Generate Request”.</pre>
+
+            <div class="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/70">
+              Pro move: customers who give clean info get faster replies and smoother scheduling.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LAB STANDARD -->
+    <section id="standard" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid gap-10 md:grid-cols-2">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">The Lab Standard</h2>
+            <p class="mt-3 text-sm leading-relaxed text-white/70">
+              Anyone can install film. The difference is the process. We treat each vehicle like a project:
+              prep correctly, install precisely, inspect thoroughly.
+            </p>
+
+            <div class="mt-8 grid gap-4">
+              <div class="surface soft-shadow rounded-3xl p-6">
+                <div class="text-xs text-white/60">01 — Consult</div>
+                <div class="mt-1 text-sm font-semibold">We match film to your goals.</div>
+                <div class="mt-2 text-sm text-white/70">Privacy, heat, clarity, and daily driving — not a one-size-fits-all pitch.</div>
+              </div>
+              <div class="surface soft-shadow rounded-3xl p-6">
+                <div class="text-xs text-white/60">02 — Prep</div>
+                <div class="mt-1 text-sm font-semibold">Clean surface. Controlled environment.</div>
+                <div class="mt-2 text-sm text-white/70">Contamination is the enemy. We minimize it like we’re allergic to dust.</div>
+              </div>
+              <div class="surface soft-shadow rounded-3xl p-6">
+                <div class="text-xs text-white/60">03 — Precision Install</div>
+                <div class="mt-1 text-sm font-semibold">Edges, alignment, and consistency.</div>
+                <div class="mt-2 text-sm text-white/70">Proper shrinking, tight cuts, and clean finishing for a factory-level look.</div>
+              </div>
+              <div class="surface soft-shadow rounded-3xl p-6">
+                <div class="text-xs text-white/60">04 — Final Inspection</div>
+                <div class="mt-1 text-sm font-semibold">We check the details before you do.</div>
+                <div class="mt-2 text-sm text-white/70">You get care guidance and clear expectations during curing.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="surface soft-shadow rounded-3xl p-7">
+            <h3 class="text-lg font-semibold">What you can expect</h3>
+            <p class="mt-2 text-sm text-white/70">Premium results, honest guidance, and a process you can trust.</p>
+
+            <div class="mt-6 grid gap-3">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">A cleaner look</div>
+                <div class="mt-1 text-sm text-white/70">No sloppy edges. No “good enough.”</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">More comfort</div>
+                <div class="mt-1 text-sm text-white/70">Less heat and glare so driving feels easier.</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">Protection that lasts</div>
+                <div class="mt-1 text-sm text-white/70">Film options selected for your priorities and budget.</div>
+              </div>
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">Warranty-backed installation</div>
+                <div class="mt-1 text-sm text-white/70">
+                  Window film installations include manufacturer-backed warranty coverage
+                  against peeling, bubbling, and discoloration for the life of the film, when properly maintained.
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-7 rounded-2xl border border-white/10 bg-white/5 p-5">
+              <div class="text-xs text-white/60">Pro tip</div>
+              <div class="mt-1 text-sm text-white/80">The best “premium” upgrade is a shop that actually has standards.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Results</h2>
+            <p class="mt-2 text-sm text-white/65">Click any photo to view full screen.</p>
+          </div>
+          <a href="#quote" class="hidden sm:inline-flex btn rounded-2xl border border-white/15 bg-white/5 px-5 py-2.5 text-sm hover:bg-white/10">
+            Build a quote request
+          </a>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-1.jpg" alt="Tint result 1" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-2.jpg" alt="Tint result 2" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-3.jpg" alt="Tint result 3" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-4.jpg" alt="Tint result 4" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-5.jpg" alt="Tint result 5" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+          <figure class="surface soft-shadow rounded-3xl overflow-hidden">
+            <img src="assets/gallery-6.jpg" alt="Tint result 6" class="gallery-img h-56 w-full object-cover cursor-zoom-in" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">FAQ</h2>
+
+        <div class="mt-10 grid gap-4 md:grid-cols-2">
+          <details class="surface soft-shadow rounded-3xl p-6">
+            <summary class="cursor-pointer text-sm font-semibold">How long does tint take to cure?</summary>
+            <p class="mt-3 text-sm text-white/70">Curing varies by weather. You may see slight haze or small water pockets early on. We’ll give you a simple care guide.</p>
+          </details>
+
+          <details class="surface soft-shadow rounded-3xl p-6">
+            <summary class="cursor-pointer text-sm font-semibold">Do you help me choose the right film?</summary>
+            <p class="mt-3 text-sm text-white/70">Yes. We’ll recommend based on heat rejection goals, visibility preferences, and budget.</p>
+          </details>
+
+          <details class="surface soft-shadow rounded-3xl p-6">
+            <summary class="cursor-pointer text-sm font-semibold">Can you match factory privacy glass?</summary>
+            <p class="mt-3 text-sm text-white/70">We can get very close depending on the vehicle and film selection. We’ll walk through options before installation.</p>
+          </details>
+
+          <details class="surface soft-shadow rounded-3xl p-6">
+            <summary class="cursor-pointer text-sm font-semibold">What do you need from me for a quote?</summary>
+            <p class="mt-3 text-sm text-white/70">Vehicle year/make/model, service type, and preferences (shade/coverage). Photos help for custom requests.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="grid gap-10 md:grid-cols-2">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">Get a Quote</h2>
+            <p class="mt-3 text-sm text-white/65">
+              Fill this out and we’ll reach out with availability and next steps.
+            </p>
+
+            <div class="mt-6 surface soft-shadow rounded-3xl p-6">
+              <div class="grid gap-3 text-sm text-white/80">
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-white/60">Phone</span>
+                  <a class="hover:text-white" href="tel:2546778799">254-677-8799</a>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-white/60">Instagram</span>
+                  <a class="hover:text-white" href="https://www.instagram.com/chroma.autolab/" target="_blank" rel="noreferrer">@chroma.autolab</a>
+                </div>
+                <div class="flex items-center justify-between gap-4">
+                  <span class="text-white/60">Service area</span>
+                  <span>Killeen • Harker Heights • Fort Hood • Nolanville</span>
+                </div>
+              </div>
+
+              <div class="mt-6 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-white/70">
+                Built the request in the Quote Builder? We’ll auto-fill the details box for you.
+              </div>
+            </div>
+          </div>
+
+          <form id="contactForm" class="surface soft-shadow rounded-3xl p-6" name="quote" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="quote" />
+
+            <div class="grid gap-4">
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="name">Name</label>
+                <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35"
+                  id="name" name="name" placeholder="Your name" required />
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="phone">Phone</label>
+                <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35"
+                  id="phone" name="phone" placeholder="(###) ###-####" required />
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="vehicle">Vehicle</label>
+                <input class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35"
+                  id="vehicle" name="vehicle" placeholder="2024 Toyota Camry" required />
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="service">Service</label>
+                <select class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white"
+                  id="service" name="service" required>
+                  <option class="bg-[#0b0b0f]" value="Window Tint" selected>Window Tint</option>
+                  <option class="bg-[#0b0b0f]" value="Vinyl Wrap (Coming Soon)">Vinyl Wrap (Coming Soon)</option>
+                </select>
+              </div>
+
+              <div class="grid gap-2">
+                <label class="text-xs text-white/60" for="details">Details</label>
+                <textarea class="min-h-[140px] w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white placeholder:text-white/35"
+                  id="details" name="details" placeholder="Tell us what you want done…" required></textarea>
+              </div>
+
+              <button type="submit" class="btn rounded-2xl bg-red-500 px-6 py-3 text-sm font-semibold hover:bg-red-400">
+                Send request
+              </button>
+
+              <p class="text-xs text-white/45">
+                By submitting, you agree we can contact you about your request. No spam. No weirdness.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/10 bg-[#0b0b0f]">
+      <div class="max-w-6xl mx-auto px-4 py-8">
+        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-xs text-white/50">© <span id="year"></span> Chroma Auto Lab. Built with standards.</p>
+          <div class="flex gap-4 text-xs text-white/50">
+            <a class="hover:text-white" href="#services">Services</a>
+            <a class="hover:text-white" href="#quote">Quote Builder</a>
+            <a class="hover:text-white" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile CTA -->
+    <div class="fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-[#0b0b0f]/90 backdrop-blur sm:hidden">
+      <div class="max-w-6xl mx-auto px-4 py-3">
+        <div class="flex gap-2">
+          <a class="btn flex-1 rounded-xl border border-white/15 bg-white/5 px-4 py-3 text-center text-sm hover:bg-white/10" href="tel:2546778799">
+            Call
+          </a>
+          <a class="btn flex-1 rounded-xl bg-red-500 px-4 py-3 text-center text-sm font-semibold hover:bg-red-400" href="#quote">
+            Build Quote
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 z-[999] hidden">
+      <div class="absolute inset-0 bg-black/80"></div>
+      <div class="relative mx-auto max-w-5xl h-full flex items-center justify-center px-4">
+        <button id="lbClose" class="absolute top-6 right-6 text-white/80 hover:text-white text-3xl" aria-label="Close">×</button>
+        <button id="lbPrev" class="absolute left-4 md:left-6 text-white/80 hover:text-white text-3xl" aria-label="Previous">‹</button>
+        <img id="lbImg" class="max-h-[80vh] w-auto rounded-2xl border border-white/10" alt="Expanded gallery image" />
+        <button id="lbNext" class="absolute right-4 md:right-6 text-white/80 hover:text-white text-3xl" aria-label="Next">›</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Your JS -->
+  <script src="js/main.js" defer></script>
+</body>
 </html>
