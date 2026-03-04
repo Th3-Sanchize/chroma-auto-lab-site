@@ -1,0 +1,16 @@
+{
+  "name": "Chroma Auto Lab",
+  "short_name": "Chroma",
+  "description": "Premium automotive window tint installation serving Killeen, Harker Heights, Fort Cavazos, and Nolanville.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b0b0f",
+  "theme_color": "#ff003c",
+  "icons": [
+    {
+      "src": "/assets/icons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

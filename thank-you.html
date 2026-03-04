@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Request Received | Chroma Auto Lab</title>
+  <meta name="description" content="Your quote request has been received by Chroma Auto Lab. We’ll reach out shortly with next steps." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Site stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="canonical" href="https://chromaautolab.com/thank-you.html" />
+
+<link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml" />
+<link rel="manifest" href="/site.webmanifest" />
+<meta name="theme-color" content="#ff003c" />
+</head>
+
+<body class="selection:bg-red-500/30 selection:text-white bg-[#0b0b0f] text-white">
+  <main class="min-h-screen">
+    <!-- Top bar -->
+    <header class="border-b border-white/10 bg-[#0b0b0f]/85 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="/" class="flex items-center gap-3">
+          <div class="h-10 w-10 rounded-2xl surface soft-shadow grid place-items-center">
+            <span class="text-sm font-semibold tracking-tight">C</span>
+          </div>
+          <div class="leading-tight">
+            <div class="text-sm font-semibold tracking-tight">Chroma Auto Lab</div>
+            <div class="text-xs text-white/60">Window Tint Specialist</div>
+          </div>
+        </a>
+
+        <div class="flex items-center gap-2">
+          <a class="btn rounded-2xl border border-white/15 bg-white/5 px-4 py-2 text-sm hover:bg-white/10"
+             href="tel:2546778799">Call</a>
+          <a class="btn rounded-2xl bg-red-500 px-4 py-2 text-sm font-semibold hover:bg-red-400"
+             href="sms:2546778799">Text</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 hero-noise opacity-60"></div>
+
+      <div class="relative max-w-3xl mx-auto px-4 py-16 md:py-24">
+        <div class="glow">
+          <div class="surface soft-shadow rounded-3xl p-8 md:p-10">
+            <div class="inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs surface soft-shadow">
+              <span class="h-2 w-2 rounded-full bg-red-500"></span>
+              Request received
+            </div>
+
+            <h1 class="mt-6 text-3xl md:text-4xl font-semibold tracking-tight">
+              You’re locked in. We got your request.
+            </h1>
+
+            <p class="mt-4 text-base text-white/75 leading-relaxed">
+              Thanks for reaching out to Chroma Auto Lab. We’ll review your details and contact you with availability and next steps.
+            </p>
+
+            <div class="mt-8 grid gap-3">
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">What happens next</div>
+                <ul class="mt-2 space-y-2 text-sm text-white/70">
+                  <li>• We confirm your vehicle + coverage</li>
+                  <li>• We recommend film/shade if needed</li>
+                  <li>• We send available time windows</li>
+                </ul>
+              </div>
+
+              <div class="rounded-2xl border border-white/10 bg-white/5 p-5">
+                <div class="text-sm font-semibold">Need it faster?</div>
+                <p class="mt-2 text-sm text-white/70">
+                  Call or text us and mention you just submitted the form.
+                </p>
+                <div class="mt-4 flex flex-col sm:flex-row gap-3">
+                  <a class="btn inline-flex justify-center items-center rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-sm hover:bg-white/10"
+                     href="tel:2546778799">Call 254-677-8799</a>
+                  <a class="btn inline-flex justify-center items-center rounded-2xl bg-red-500 px-6 py-3 text-sm font-semibold hover:bg-red-400"
+                     href="sms:2546778799">Text Us</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-3">
+              <a href="/" class="btn inline-flex justify-center items-center rounded-2xl border border-white/20 bg-white/5 px-6 py-3 hover:bg-white/10">
+                Back to Home
+              </a>
+              <a href="https://www.instagram.com/chroma.autolab/" target="_blank" rel="noreferrer"
+                 class="btn inline-flex justify-center items-center rounded-2xl border border-white/15 bg-black/20 px-6 py-3 hover:bg-white/10">
+                View Instagram
+              </a>
+            </div>
+
+            <p class="mt-8 text-xs text-white/45">
+              Service area: Killeen • Harker Heights • Fort Hood • Nolanville
+            </p>
+          </div>
+
+          <p class="mt-6 text-center text-xs text-white/45">
+            © <span id="year"></span> Chroma Auto Lab
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
