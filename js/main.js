@@ -1,14 +1,7 @@
-// =========================
-// Chroma Auto Lab - main.js
-// =========================
-
 const $ = (sel, root = document) => root.querySelector(sel);
 const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
 document.addEventListener("DOMContentLoaded", () => {
-  // -------------------------
-  // Mobile menu
-  // -------------------------
   const menuBtn = $("#menuBtn");
   const mobileMenu = $("#mobileMenu");
 
@@ -20,15 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
     a.addEventListener("click", () => mobileMenu?.classList.add("hidden"));
   });
 
-  // -------------------------
-  // Footer year
-  // -------------------------
   const yearEl = $("#year");
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
-  // -------------------------
-  // Copy phone button
-  // -------------------------
   const copyBtn = $("#copyPhone");
   copyBtn?.addEventListener("click", async () => {
     const original = copyBtn.textContent;
@@ -43,9 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // -------------------------
-  // Quote Builder
-  // -------------------------
   const qbForm = $("#quoteBuilder");
   const qbOutput = $("#qbOutput");
   const qbCopy = $("#qbCopy");
@@ -117,9 +101,6 @@ Service area: Killeen / Harker Heights / Fort Hood / Nolanville`;
     setTimeout(() => details?.focus(), 600);
   });
 
-  // -------------------------
-  // Gallery Lightbox
-  // -------------------------
   const imgs = $$(".gallery-img");
   const lightbox = $("#lightbox");
   const lbImg = $("#lbImg");
@@ -161,7 +142,6 @@ Service area: Killeen / Harker Heights / Fort Hood / Nolanville`;
   lbPrev?.addEventListener("click", prevImg);
   lbNext?.addEventListener("click", nextImg);
 
-  // Close if clicking the backdrop (only if you click the outer container)
   lightbox?.addEventListener("click", (e) => {
     if (e.target === lightbox) closeLightbox();
   });
