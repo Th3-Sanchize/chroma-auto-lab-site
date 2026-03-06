@@ -1,15 +1,9 @@
-/* =========================
-   GLOBAL BASE
-========================= */
 body {
   background: #0b0b0f;
   color: white;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
 
-/* =========================
-   MODERN SURFACES
-========================= */
 .surface {
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
   border: 1px solid rgba(255,255,255,.10);
@@ -22,9 +16,15 @@ body {
     0 20px 60px rgba(0,0,0,.45);
 }
 
-/* =========================
-   HERO EFFECTS
-========================= */
+.hero-image {
+  position: absolute;
+  inset: 0;
+  background-image: url("/assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .hero-noise {
   background-image:
     radial-gradient(circle at 20% 10%, rgba(255,255,255,.10), transparent 35%),
@@ -35,6 +35,7 @@ body {
 .glow {
   position: relative;
 }
+
 .glow::before {
   content: "";
   position: absolute;
@@ -47,29 +48,18 @@ body {
   z-index: -1;
 }
 
-/* =========================
-   BUTTON MICRO-INTERACTION
-========================= */
 .btn {
   transition: transform .12s ease, background-color .12s ease, border-color .12s ease, box-shadow .12s ease;
 }
-.btn:hover { transform: translateY(-1px); }
-.btn:active { transform: translateY(1px); }
 
-/* =========================
-   VIDEO HERO
-========================= */
-.hero-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.btn:hover {
+  transform: translateY(-1px);
 }
 
-/* =========================
-   BACKGROUND WORDS
-========================= */
+.btn:active {
+  transform: translateY(1px);
+}
+
 .bg-words {
   position: absolute;
   inset: 0;
@@ -104,4 +94,12 @@ body {
   left: 40px;
   transform: rotate(-6deg);
   font-size: clamp(38px, 6vw, 80px);
+}
+
+.gallery-img {
+  transition: transform 0.25s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);
 }
